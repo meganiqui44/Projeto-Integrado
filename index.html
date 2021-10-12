@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Produção</title>
+</head>
+
+
+<body>
+  
+    <header>
+        <h1>Controle de Produção</h1>
+    </header>
+    <nav id="menu">
+        <a class="cadastrar" href="#"> Cadastrar</a>
+        <a class="consultar" href="Consulta.html">Consulta</a>   
+    </nav>
+    <main>
+        <section class="conteiner">
+            <div><label for="responsavel">Responsável: </label>
+                <select name="responsavel" id="responsavel">
+                    <option value="">Selecione</option>
+                    <option value="Bruna">Bruna</option>
+                    <option value="Robson">Robson</option>
+                    <option value="Luma">Luma</option>
+                </select>
+            </div>
+            <div><label for="produto">Produto: </label>
+                <input type="text" placeholder="Produto:" id="produto" required>
+  
+            </div>
+            <div><label for="codigo">Código Semi-Acabado: </label>
+                <input type="text" id="codigo" required>
+
+            </div>
+            <div><label for="setor">Setor: </label>
+                <input type="text" id="setor" required>
+
+            </div>
+            <div><label for="cabeca">Diâmetro Cabeça: </label>
+                <input type="number" min="0" id="cabeca" required>
+  
+            </div>
+            <div><label for="corpo">Diâmetro Corpo/Furo: </label>
+                <input type="number" min="0" id="corpo" required>
+   
+            </div>
+            <div><label for="altura">Altura Total: </label>
+                <input type="number" min="0" id="altura" required>
+
+            </div>
+            <div><label for="divisao">Divisão: </label>
+                <input type="number" min="0" id="divisao" required>
+    
+            </div>
+            <div><label for="passo">Passo: </label>
+                <input type="number" min="0" id="passo" required>
+
+            </div>
+            <div><label for="carreira">Número Carreira: </label>
+                <input type="number" min="0" id="carreira" required>
+ 
+            </div>
+            <div><label for="GPM">GPM: </label>
+                <input type="number" min="0" id="GPM" required>
+
+            </div>
+            <div><label for="pecas">Peças por minuto: </label>
+                <input type="number" min="0" id="pecas" required>
+   
+            </div>
+            <div><label for="TPE">TPE: </label>
+                <input type="number" min="0" id="TPE" required>
+   
+            </div>
+            <div><label for="bruto">Peso Bruto (kg/mil): </label>
+                <input type="number" min="0" id="bruto" required>
+     
+            </div>
+            <div><label for="liquido">Peso Líquido (kg/mil): </label>
+                <input type="number" min="0" id="liquido" required>
+     
+            </div>
+            <div><label for="material">Material/Código: </label>
+                <input type="text" id="material" required>
+      
+            </div>
+            <div><label for="espessura">Espessura da Fita: </label>
+                <input type="number" min="0" id="espessura" required>
+         
+            </div>
+            <div><label for="largura">Largura da Fita: </label>
+                <input type="number" min="0" id="largura" required>
+            
+            </div>
+
+            <button type="submit" class="submit">Salvar</button>
+        </section>
+
+    </main>
+    <footer>
+        <h2>Projeto Desenvolvido por:</h2>
+        <p>Bruna</p>
+        <p>Luma</p>
+        <p>Robson</p>
+        <p>Roger</p>
+        <p>Douglas</p>
+        <p>Tarcício</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
