@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Produção</title>
+</head>
+
+
+<body>
+  
+    <header>
+        <h1>Controle de Produção</h1>
+    </header>
+    <main>
+        <section class="conteiner-cad">
+            <h2>Novo Cadastro</h2>
+            <hr>
+            
+            <div class="div-cad"><label for="responsavel">Responsável: </label>
+                <input type="text" placeholder="Nome do Responsável" id="responsavel" required>
+            </div>
+           
+            <div class="div-cad"><label for="produto">Produto: </label>
+                <input type="text" placeholder="Produto:" id="produto" required>
+            </div>
+            
+            <div class="div-cad"><label for="codigo">Código Semi-Acabado: </label>
+                <input type="text" id="codigo" required>
+            </div>
+
+            <div class="div-cad"><label for="cabeca">Diâmetro Cabeça: </label>
+                <input type="number" min="0" id="cabeca" required>
+            </div>
+
+            <div class="div-cad"><label for="corpo">Diâmetro Corpo/Furo: </label>
+                <input type="number" min="0" id="corpo" required>
+               </div>
+
+            <div class="div-cad"><label for="altura">Altura Total: </label>
+                <input type="number" min="0" id="altura" required>
+            </div>
+
+            <div class="div-cad"><label for="divisao">Divisão: </label>
+                <input type="number" min="0" id="divisao" required>  
+            </div>
+
+            <div class="div-cad"><label for="passo">Passo: </label>
+                <input type="number" min="0" id="passo" required>
+            </div>
+
+            <div class="div-cad"><label for="carreira">Número Carreira: </label>
+                <input type="number" min="0" id="carreira" required> 
+            </div>
+
+            <div class="div-cad"><label for="GPM">GPM: </label>
+                <input type="number" min="0" id="GPM" required>
+            </div>
+
+            <div class="div-cad"><label for="pecas">Peças por minuto: </label>
+                <input type="number" min="0" id="pecas" required>
+            </div>
+
+            <div class="div-cad"><label for="TPE">TPE: </label>
+                <input type="number" min="0" id="TPE" required>
+            </div>
+
+            <div class="div-cad"><label for="bruto">Peso Bruto (kg/mil): </label>
+                <input type="number" min="0" id="bruto" required>
+                 </div>
+
+            <div class="div-cad"><label for="liquido">Peso Líquido (kg/mil): </label>
+                <input type="number" min="0" id="liquido" required>
+            </div>
+
+            <div class="div-cad"><label for="material">Material/Código: </label>
+                <input type="text" id="material" required>
+             </div>
+
+             <div class="div-cad"><label for="espessura">Espessura da Fita: </label>
+                <input type="number" min="0" id="espessura" required>
+            </div>
+
+            <div class="div-cad"><label for="largura">Largura da Fita: </label>
+                <input type="number" min="0" id="largura" required>
+            </div>
+
+            <button type="submit" class="submit">Salvar</button>
+            <a href="index.html"><button>Voltar</button></a>
+
+    </section>
+    </main>
+
+    <footer>
+        <h2>Projeto Integrador</h2>
+        <p>Bruna</p>
+        <p>Luma</p>
+        <p>Robson</p>
+        <p>Roger</p>
+        <p>Douglas</p>
+        <p>Cainan</p>
+        <p>Tarcísio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
