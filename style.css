@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
+html{
+    height: 100%;
+    min-height: 100%;
+}   
 body{
+    display: flex;
+    flex-direction: column;
     background:turquoise;
+    min-height: 100%;
 }
 
 header{
@@ -25,27 +31,27 @@ nav{
     text-align: center;
 }
 
-a{
-  text-decoration: none;
-  background: white;
-  color: green;
-  font-weight: bold; 
-  padding: 10px;
-  border: solid white;
-  margin:20px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.589);
-}
-
-a:hover{
+.consultar, .cadastrar{
     text-decoration: none;
-    background: greenyellow;
-    color: grey;
+    background: white;
+    color: green;
     font-weight: bold; 
-    border: solid white;        
-}
+    padding: 10px;
+    border: solid white;
+    margin:20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.589);
+  }
+  
+.consultar:hover, .cadastrar:hover{
+      text-decoration: none;
+      background: greenyellow;
+      color: grey;
+      font-weight: bold; 
+      border: solid white;            
+  }
 
-main{
+main{  
     background: white;
     max-width: 600px;
     min-width: 200px;
@@ -61,7 +67,22 @@ main{
     margin: 0; 
 }
 
-div{
+.conteiner-cad{
+    width: 100%;
+    padding: 80px;
+    margin: 0;
+
+}
+
+.login{
+    width: 100%;
+    padding: 30px 90px;
+    margin: 0; 
+
+}
+
+
+.div-cad{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px;
@@ -69,6 +90,18 @@ div{
     justify-items: left;
     grid-gap: 30px;
     margin: 10px;
+}
+
+div{
+    align-items: center;
+    justify-items: left;
+    grid-gap: 30px;
+    margin: 10px;
+}
+
+.form-group{
+   padding-inline-end: 0px;
+   display: inline;
 }
 
 label{
@@ -84,7 +117,8 @@ select{
 }
 
 select:hover{
-    border-color: rgb(0, 25, 247);
+    border-color :  rgb(0, 25, 247);
+    
 }
 
 select:focus {
@@ -95,17 +129,24 @@ select:focus {
   }
 
 footer{
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.527);
     color: white;
-    margin-top: 10px;
+    margin-top:auto;
     text-shadow: 1px 1px 1px black;
-}
+}  
 
 h2{
     font-size: 1.2em;
+    margin: 10px;
+    padding-bottom:15px ;
 }
+
+hr{
+    margin-bottom: 30px;
+}
+
 
 p{
     margin-top: 10px;
@@ -117,26 +158,22 @@ input{
     border-radius: 8px;
     padding: 5px 5px ;
     background-image: linear-gradient(to bottom, white, lightgrey);
-    
     border: none;
     border-style:ridge;
 }
 
 input:hover{
-    border-color: blueviolet;
+    border-color: rgb(0, 25, 247);
 }
 
-.submit{    
-    /* width: 120px;
-    margin: 50px 0 20px 0; 
-    padding: 10px;
-    background:green;
-    border: none;
-    border-radius: 10px;
-    text-shadow:1px 1px 1px black;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.692);
-    color: white;
-    font-weight: bold; */
+input:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    color: #222; 
+    outline: none;
+  } 
+
+button{    
   padding: 10px 20px;
   font-size: 20px;
   text-align: center;
@@ -147,22 +184,19 @@ input:hover{
   border: none;
   border-radius: 10px;
   box-shadow: 0 6px #999;
+  margin-top: 50px;
 }
 
-.submit:hover{
-    /* text-decoration: none;
-    background: greenyellow;
-    color: rgb(51, 50, 50);
-    font-weight: bolder; 
-    border: solid white;   
-    text-shadow: none;         */
+button:hover{
     background-color: #3e8e41
 }
 
-.submit:active{
+button:active{
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);   
 }
 
-
+.fconsulta{
+    margin: top auto;
+}
